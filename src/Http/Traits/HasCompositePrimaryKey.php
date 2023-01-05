@@ -64,7 +64,7 @@ trait HasCompositePrimaryKey
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $attributes = $this->toArray();
         foreach ($attributes as $key => $value) {
